@@ -5,7 +5,10 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node build/main.js",
+    "dev": "nodemon src/main.ts",
+    "build": "tsc -p .",
+    "buildt": "tsc -p . && copyfiles -v -E -u 1 src/static/** build/ && copyfiles -v -E -u 1 src/views/** build/"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "@types/express": "^4.17.12"
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.12.2"
   }
 }
