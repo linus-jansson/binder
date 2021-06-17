@@ -1,0 +1,13 @@
+
+{
+    "compilerOptions": {
+        "module": "ES2020",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "removeComments": true, // minskar output filen
+        "outDir": "build/",
+        "allowSyntheticDefaultImports": true,
+        "typeRoots": ["node_modules/@types"]
+    },
+    "include": ["src/**/*"]
+}
